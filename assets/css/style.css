@@ -1,0 +1,88 @@
+body {
+	max-width: 960px;
+	background-image: url("../images/cork-wallet.png");
+}
+
+h1 {
+	color: white;
+	background-color: brown;
+
+}
+
+#heading {
+	background-color: brown;
+	height: 66px;
+	width: 27%;
+	margin-top: -13px;
+}
+
+#instruction {
+	color: green;
+	background-color: tan;
+	height: 300px;
+	width: 50%;
+}
+
+#randomNumber {
+	font-size: 120px;
+	text-align: center;
+	float:left;
+	color: purple;
+	height: 150px;
+	width: 400px;
+	background-color: green;
+}
+
+#scoreboard {
+	float: right;
+	color: black;
+	background-color: teal;
+	margin-right: 45%;
+}
+
+#gems {
+	width: 50%;
+	margin-top: 10px;
+}
+img {
+	cursor: pointer;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+
+}
+
+#pinkGem {
+	border: 2px solid black;
+}
+
+#blueGem {
+	border: 2px solid black;
+	margin-left: 5px;
+}
+
+#greenGem {
+	border: 2px solid black;
+	margin-left: 5px;
+}
+
+#rubyGem {
+	border: 2px solid black;
+	margin-left: 5px;
+}
+#totalScore {
+	margin-right: 45%;
+	color: white;
+	background-color:teal;
+	width: 300px;
+	height: 30px;
+}
+
+#totalNumber {
+	color: white;
+	text-align: center;
+	font-size: 100px;
+	background-color:teal;
+	width: 300px;
+	height: 150px;
+}
