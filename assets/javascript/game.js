@@ -43,10 +43,22 @@ function gemNumbers() {
 function add(number) {
 	totalScore = totalScore + number;
 	console.log(totalScore);
-	$("#totalNumber").append(totalScore);
+	$("#totalNumber").html(totalScore);
 	console.log(totalNumber);
 	return  
 }
+
+function checkScore (computer, user) {
+	if (user === computer) {
+		wins++;
+		init();
+	}
+	else if (user > computer) {
+		loss++;
+		init()
+	}
+}
+
 //Starts and resets game
 function init() {
 var totalNumber = [];
@@ -70,40 +82,37 @@ init();
 
 //pinkGem click
 $("#pinkGem").on("click", function() {
-	alert(pinkNumber);
 	add(pinkNumber);
 	/*return $("#totalScore").append(pinkNumber)*/
 });
 
 //blueGem click
 $("#blueGem").on("click", function() {
-	alert(blueNumber);
 	add(blueNumber);
 });
 
 //greenGem click
 $("#greenGem").on("click", function() {
-	alert(greenNumber);
 	add(greenNumber);
 });
 
 //rubyGem click
 $("#rubyGem").on("click", function() {
-	alert(rubyNumber);
 	add(rubyNumber);
 });
 
 
 
-
+console.log(totalScore);
+console.log(totalNumber);
 
 
 
 
 //win
-if (totalScore === totalNumber) {
-	win++;
-	console.log(win);
+if (totalScore == totalNumber) {
+	wins++;
+	console.log(wins);
 	init();
 
 }

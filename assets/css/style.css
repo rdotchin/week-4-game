@@ -20,7 +20,7 @@ h1 {
 	color: green;
 	background-color: tan;
 	height: 300px;
-	width: 50%;
+	width: 52%;
 }
 
 #randomNumber {
@@ -31,24 +31,28 @@ h1 {
 	height: 150px;
 	width: 400px;
 	background-color: green;
+	margin-top: 15px;
 }
 
 #scoreboard {
 	float: right;
 	color: black;
 	background-color: teal;
-	margin-right: 45%;
+	margin-right: 48%;
+	margin-top: 15px;
+	padding: 10px;
 }
 
 #gems {
 	width: 50%;
-	margin-top: 10px;
+	
 }
 img {
 	cursor: pointer;
 	display: inline-block;
 	height: 100px;
 	width: 100px;
+	margin-top: 15px;
 
 }
 
