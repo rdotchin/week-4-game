@@ -2,53 +2,61 @@
 <html>
 <head>
 	<title>Crystals Collector</title>
+	<!--reset CSS file-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--style CSS file-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--jQuery-->
 	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<!--javascript file-->
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
 <body>
 
-<div id="heading">
-	<h1>CrystalsCollector!</h1>
-</div>
-<div id="instruction">
-<p>You will be given a random number at the start of the game.</p>
+	<div id="heading">
+		<h1>CrystalsCollector!</h1>
+	</div>
 
-<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+	<!--Instructions for the game go here-->
+	<div id="instruction">
+		<p>You will be given a random number at the start of the game.</p>
 
-<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+		<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
 
-<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
 
-<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
 
-</div>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
 
-<!--This will be the random number the user will try to reach-->
-<div id="randomNumber"></div>
+	</div>
 
-<!--This will show the wins and losses for the player-->
-<div id="scoreboard">
-	<p>Wins: 0</p>
-	<p>Losses: 0</p>
-</div>
+	<!--This is the number the user will try to reach-->
+	<div id="randomNumber"></div>
 
-<div id="gems">
-	<img id="pinkGem" src="assets/images/pinkGem.png">
-	<img id="blueGem" src="assets/images/blueGem.png">
-	<img id="greenGem" src="assets/images/greenGem.png">
-	<img id="rubyGem" src="assets/images/rubyGem.png">
-</div>
+	<!--Scoreboard will show the wins and losses for the player-->
+	<div id="scoreboard">
+		<p id="wins">Wins: 0</p>
+		<p id="loss">Losses: 0</p>
+	</div>
+	
+	<!--gems assigned random numbers the user can click to reach the randomNumber-->
+	<div id="gems">
+		<img id="pinkGem" src="assets/images/pinkGem.png">
+		<img id="blueGem" src="assets/images/blueGem.png">
+		<img id="greenGem" src="assets/images/greenGem.png">
+		<img id="rubyGem" src="assets/images/rubyGem.png">
+	</div>
 
-<div id="totalScore">
-	<p>Your total score is:</p>
-</div>
+	<div id="totalScore">
+		<p>Your total score is:</p>
+	</div>
 
-<div id="totalNumber">
-	0
-</div>
+	<!--Displays the total number from the gems the user has clicked on-->
+	<div id="totalNumber">
+		0
+	</div>
 
 </body>
 </html>
